@@ -1,0 +1,47 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "../blocks/modules";
+
+h2{
+    color:black;
+    font-family: 'Roboto Slab Bold';
+}
+.container{
+    max-width: 1230px;
+}
+// BEGIN AND FIRST SECTION
+.page-main{
+    width: 100%;
+    background: url("../img/bg-main.png") center no-repeat;
+    background-size: cover;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        display: block;
+        width: 137px;
+        height: 27px;
+        background-image: url("../img/logo.svg");  
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &-list{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+    }
+    &-list__item{
+
+    }
+}
+// END FIRST SECTION
+// BEGIN AND AUTOR SECTION
+// END AUTOR SECTION
+// BEGIN AND ABOUT SECTION
+// END ABOUT SECTION
