@@ -6,9 +6,8 @@
 @import "base/general";
 @import "../blocks/modules";
 
-h2{
-    color:black;
-    font-family: 'Roboto Slab Bold';
+body{
+    font-family: 'Roboto Slab Regular';
 }
 .container{
     max-width: 1230px;
@@ -18,15 +17,20 @@ h2{
     width: 100%;
     background: url("../img/bg-main.png") center no-repeat;
     background-size: cover;
+    color: $light-color;
+    padding-bottom: 160px;
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 38px;
+    padding-bottom: 166px;
+
     &__logo{
         display: block;
         width: 137px;
-        height: 27px;
+        height: 28px;
         background-image: url("../img/logo.svg");  
         background-repeat: no-repeat;
         background-size: cover;
@@ -37,9 +41,105 @@ h2{
         justify-content: flex-end;
     }
     &-list__item{
-
+        margin-left: 22px;
+        padding-bottom: 5px;
+        transition: 0.3s;
+        &:hover{
+            border-bottom: 3px solid $accent-color;
+        }
+    }
+    &-list__item.active{
+        border-bottom: 3px solid $accent-color;
+    }
+    
+    &-list__link{
+        color:$light-color;
+        font-size: 16px;
+        font-family: 'OpenSans Regular';
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.5px;
     }
 }
+.blook-book{
+    display: flex;
+    justify-content: space-between;
+    &__demo{
+        background-image: url("../img/book.svg");
+        background-repeat: no-repeat;
+        // background-size: cover;
+        display: block;
+        width: 40.208%;
+        height: 645px;
+    }
+}
+.blook-text{
+    flex-basis: calc(93% - 466px);
+    &__name{
+        font-size: 18px;
+        font-family: 'OpenSans Regular';
+        color: $light-color;
+        line-height: 2.444;
+        letter-spacing: 0.7px;
+        margin-bottom: 30px;
+    }
+    &__title{
+        font-size: 48px;
+        font-family: "Roboto Slab Bold";
+        color: $light-color;
+        font-weight: bold;
+        line-height: 0.917;
+        z-index: 328;
+        letter-spacing: 1.8px;
+        margin-bottom: 40px;
+
+        &-span{
+            display: block;
+            font-size: 18px;
+            font-family: 'Roboto Slab Regular';
+            color:$accent-color;
+            line-height: 2.444;
+            letter-spacing: 0.9px;
+            margin-top: 9px;
+        }
+    }
+    &__text{
+        font-size: 15px;
+        font-family: 'OpenSans Regular';
+        color: $light-color;
+        line-height: 1.6;
+        margin-bottom: 24px;
+        letter-spacing: 0.7px;
+    }
+    
+    .block-text__btn{
+        display: block;
+        font-size: 18px;
+        font-family: 'Roboto Slab Regular';
+        color: $light-color;
+        line-height: 1.2;
+        background-color: $accent-color;
+        width: 250px;
+        text-align: center;
+        border-radius: 3px;
+        margin-top: 48px;
+        margin-bottom: 19px;
+        padding: 14px;
+        letter-spacing: 0.7px;
+
+    }
+    small{
+        display: block;
+        font-size: 12px;
+        font-family: 'OpenSans Regular';
+        color: $light-color;
+        font-style: italic;
+        line-height: 1.833;
+    }
+}
+
+  
 // END FIRST SECTION
 // BEGIN AND AUTOR SECTION
 // END AUTOR SECTION
