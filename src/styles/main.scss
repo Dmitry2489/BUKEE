@@ -56,7 +56,7 @@ body{
         color:$light-color;
         font-size: 16px;
         font-family: 'OpenSans Regular';
-        color: rgb(255, 255, 255);
+        color: $light-color;
         line-height: 1.2;
         text-align: center;
         letter-spacing: 0.5px;
@@ -75,19 +75,20 @@ body{
     }
 }
 .blook-text{
-    flex-basis: calc(93% - 466px);
+    flex-basis: calc(94% - 466px);
     &__name{
         font-size: 18px;
         font-family: 'OpenSans Regular';
-        color: $light-color;
         line-height: 2.444;
         letter-spacing: 0.7px;
         margin-bottom: 30px;
     }
+    &__name--top{
+        margin-top: 20px;
+    }
     &__title{
         font-size: 48px;
         font-family: "Roboto Slab Bold";
-        color: $light-color;
         font-weight: bold;
         line-height: 0.917;
         z-index: 328;
@@ -107,13 +108,12 @@ body{
     &__text{
         font-size: 15px;
         font-family: 'OpenSans Regular';
-        color: $light-color;
         line-height: 1.6;
         margin-bottom: 24px;
-        letter-spacing: 0.7px;
+        letter-spacing: 0.75px;
     }
     
-    .block-text__btn{
+    &__btn{
         display: block;
         font-size: 18px;
         font-family: 'Roboto Slab Regular';
@@ -133,15 +133,51 @@ body{
         display: block;
         font-size: 12px;
         font-family: 'OpenSans Regular';
-        color: $light-color;
         font-style: italic;
         line-height: 1.833;
     }
 }
-
-  
 // END FIRST SECTION
 // BEGIN AND AUTOR SECTION
+.blook-author{
+    display: flex;
+    justify-content: space-between;
+    margin: 160px 0;
+}
+
+.block-ava{
+    position: relative;
+    
+    &__svg{
+        position: absolute;
+        z-index: -1;
+        right: 0;
+    }
+    &__img{
+        margin-top: 48px;
+        margin-right: 44px;
+    }
+}
+.blook-counter{
+    display:flex;
+    justify-content: space-around;
+    &__text{
+        font-size: 18px;
+        font-family: 'OpenSans Regular';
+        color: $text-color;
+        line-height: 2.444;
+        text-align: center;
+    }
+    &__span{
+        display: block;
+        font-size: 80px;
+        font-family: 'Roboto Slab Thin';
+        color: $accent-color;
+        line-height: 0.55;
+        margin-bottom: 12px;
+    }
+      
+}
 // END AUTOR SECTION
 // BEGIN AND ABOUT SECTION
 // END ABOUT SECTION
